@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<HTML lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+    <!--Menu--->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Portafolio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">Proyectos</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+<!--Inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/perfil.jpg" alt="">
+            </div>
+            <h1>Lizeth Garcia</h1>
+            <h2>Ingeniera de Software - Desarrollador Jr</h2>
+            <div class="redes">
+               <a href="https://www.linkedin.com/in/lizeth-garcia-a-6404182bb/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/LizG-Dev" target="_blank">
+                    <i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+<!--Sobre mi-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mi</h2>
+            <p>Soy <span>desarrolladora Jr</span>, con 4 años de experiencia en el desarrollo y diseño de aplicaciones web y móviles, 
+                así como en la gestión y administración de bases de datos. Me gusta crear soluciones y diseños prácticos que mejoren la experiencia 
+                del usuario, tanto en la navegación como en la presentación visual. Actualmente busco expandir mis conocimientos en nuevas áreas, 
+                especialmente en el campo de la ciberseguridad, con el objetivo de fortalecer mis habilidades técnicas y aportar valor en proyectos.</p>
+
+            <div class="fila">
+            <!--datos personales--> 
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Telefono</strong>
+                            +52 81 1234 5678
+                        </li>
+
+                        <li>
+                            <strong>Email</strong>
+                            lizethgarcia@gmail.com
+                        </li>
+                    </ul>
+            </div> 
+            
+            <a href="img/Cv Lizeth Garcia.pdf" target="_blank" class="descargar-cv">
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+
+
+        </div>
+    </section>
+
+<!--Skills-->
+    <section class="skills" id="skills">
+    <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+            <!--Skills técnicas-->
+            <div class="col">
+                <h3>Skills Técnicas</h3>
+                <div class="skill">
+                    <span>HTML y CSS</span>
+                    <div class="barra-skill">
+                        <div class="progreso htmlycss">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="barra-skill">
+                        <div class="progreso javascript">
+                            <span>70%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>C#</span>
+                    <div class="barra-skill">
+                        <div class="progreso csharp">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>PHP</span>
+                    <div class="barra-skill">
+                        <div class="progreso php">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Python</span>
+                    <div class="barra-skill">
+                        <div class="progreso python">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Django</span>
+                    <div class="barra-skill">
+                        <div class="progreso django">
+                            <span>70%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Angular</span>
+                    <div class="barra-skill">
+                        <div class="progreso angular">
+                            <span>65%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Kotlin</span>
+                    <div class="barra-skill">
+                        <div class="progreso kotlin">
+                            <span>70%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Git</span>
+                    <div class="barra-skill">
+                        <div class="progreso git">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Skills profesionales-->
+            <div class="col">
+                <h3>Skills Profesionales</h3>
+                <div class="skill">
+                    <span>Comunicación</span>
+                    <div class="barra-skill">
+                        <div class="progreso comunicacion">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Trabajo en equipo</span>
+                    <div class="barra-skill">
+                        <div class="progreso trabajoequipo">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Resolución de problemas</span>
+                    <div class="barra-skill">
+                        <div class="progreso resolucion">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Adaptabilidad</span>
+                    <div class="barra-skill">
+                        <div class="progreso adaptabilidad">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Proactividad</span>
+                    <div class="barra-skill">
+                        <div class="progreso proactividad">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Gestión de tiempo</span>
+                    <div class="barra-skill">
+                        <div class="progreso gestion">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Proyectos-->
+<section id="proyectos" class="proyectos">
+    <div class="contenido-seccion">
+        <h2>Proyectos</h2>
+        <div class="galeria">
+            <div class="portafolio">
+                <img src="img/app1.webp" alt="">
+                <div class="overlay">
+                    <h3>Registro de usuarios a una plataforma estudiantil</h3>
+                    <h4>Agosto 2025</h4>
+                    <p>Se desarrolló una aplicación para registrar maestros, alumnos y administradores de una institución educativa. 
+                        Los usuarios se identificaban de la siguiente manera: los alumnos mediante su matrícula, los maestros mediante 
+                        nombre y apellido, y los administradores mediante una combinación de números y letras. En la aplicación los maestros 
+                        podían subir tareas y calificaciones, mientras que los alumnos podían entregar tareas y visualizar calificaciones.
+                    </p>
+                </div>
+            </div>
+            <div class="portafolio">
+                <img src="img/app2.jpg" alt="">
+                <div class="overlay">
+                    <h3>Compra de tickets para autobus</h3>
+                    <h4>Abril 2025</h4>
+                    <p>Se desarrolló una página web en la que los usuarios podían comprar boletos para viajar dentro del estado de Nuevo León, así como 
+                        a otros destinos cercanos. Para realizar la compra, el usuario debía registrarse con correo electrónico y contraseña. Además, la plataforma
+                         permitía pagar tanto en efectivo como con tarjeta, y seleccionar la cantidad de asientos deseados.
+                    </p>
+                </div>
+            </div>
+            <div class="portafolio">
+                <img src="img/img1.jpg" alt="">
+                <div class="overlay">
+                    <h3>Tienda virtual de segunda mano</h3>
+                    <h4>Diciembre 2024</h4>
+                    <p>Se desarrolló una página web para la compra y venta de artículos de segunda mano en las cercanías del usuario. Los pagos podían realizarse
+                         en efectivo o con tarjeta. Para publicar y vender productos, el usuario debía estar registrado y subir obligatoriamente una fotografía del
+                          artículo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Contacto-->
+<section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>Contacto</h2>
+        <div class="fila">
+            <div class="col">
+                <input type="text" placeholder="Tu nombre">
+                <input type="text" placeholder="Numero telefonico">
+                <input type="text" placeholder="Correo electronico">
+                <input type="text" placeholder="Tema">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <button>
+                    Enviar mensaje <i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--final-->
+
+<footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+     <div class="redes">
+                <a href="https://www.linkedin.com/in/lizeth-garcia-a-6404182bb/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/LizG-Dev" target="_blank">
+                    <i class="fa-brands fa-github"></i></a>
+            </div>
+</footer>
+
+<script src="script.js"></script>
+ </body>
+</HTML>
