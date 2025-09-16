@@ -341,22 +341,33 @@ a.descargar-cv {
 }
 
 .proyectos .galeria {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px;
     justify-content: center;
-    gap: 20px;
+    padding: 20px;
 }
 
 .proyectos .galeria .portafolio {
-    max-width: 340px;
-    margin: 10px;
+    width: 100%;
+    max-width: 180px;
     text-align: center;
+    margin: 0 auto;
 }
 
 .proyectos .galeria .portafolio img {
     width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
     display: block;
-    border-radius: 10px; /* opcional: esquinas redondeadas */
+}
+
+.proyectos .galeria .portafolio {
+    width: 100%;    
+    max-width: 340px;   
+    text-align: center;
+    margin: 0;      
 }
 
 .proyectos .galeria .portafolio .overlay {
@@ -384,6 +395,18 @@ a.descargar-cv {
 .proyectos .galeria .portafolio .overlay p {
     text-align: justify;
     color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .proyectos .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .proyectos .galeria {
+        grid-template-columns: 1fr;
+    }
 }
 
 /*contexto*/
@@ -507,4 +530,5 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+
 }
