@@ -93,16 +93,18 @@ html{
     border-radius: 100%;
 }
 
-.inicio .contenido-banner h1{
-    margin-top: 40px;
-    font-size: 42px;
+.inicio .contenido-banner h2{
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
     font-family: 'Righteous';
 }
 
-.inicio .contenido-banner h2{
+.inicio .contenido-banner h3 {
+    margin-top: 15px;
     font-size: 15px;
-    font-weight: normal;
-}
+    font-family: 'Righteous';
+ }
 
 .inicio .contenido-banner .redes a{
     color: #fff;
@@ -530,5 +532,4 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
-
 }
